@@ -141957,7 +141957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5451894333683650432, guid: 0cef1a0a9c89a90438afea99a66548ce, type: 3}
       propertyPath: m_Name
-      value: yakindusman
+      value: MeleeEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 5451894333683650432, guid: 0cef1a0a9c89a90438afea99a66548ce, type: 3}
       propertyPath: m_TagString
@@ -141981,7 +141981,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5028440521659867516, guid: 7a39921c1cea5ad44ae1ddf98cc82825, type: 3}
       propertyPath: m_Name
-      value: uzakdusman
+      value: ArcherEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 5028440521659867516, guid: 7a39921c1cea5ad44ae1ddf98cc82825, type: 3}
       propertyPath: m_TagString
@@ -142064,6 +142064,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1043489696998997124, guid: 52212077e2bf2104383f7ac643e073f8, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043489696998997124, guid: 52212077e2bf2104383f7ac643e073f8, type: 3}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
@@ -142073,11 +142077,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1524292525030178783, guid: 52212077e2bf2104383f7ac643e073f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.33
+      value: 5.844
       objectReference: {fileID: 0}
     - target: {fileID: 1524292525030178783, guid: 52212077e2bf2104383f7ac643e073f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: 1.098
       objectReference: {fileID: 0}
     - target: {fileID: 1524292525030178783, guid: 52212077e2bf2104383f7ac643e073f8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -142258,6 +142262,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864224741632920420, guid: 3f51f4ad07a3db9429be962ac7858ad8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234913274182633547, guid: 3f51f4ad07a3db9429be962ac7858ad8, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8559420941319136472, guid: 3f51f4ad07a3db9429be962ac7858ad8, type: 3}
