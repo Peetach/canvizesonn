@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class MeleeEnemy : MonoBehaviour
 {
-    public int health = 50; // Düþmanýn caný
+   
     public Transform player; // Oyuncunun Transform'u
     public float speed = 2f; // Hareket hýzý
     public float attackRange = 1.5f; // Saldýrý menzili
     public int damage = 10; // Verdiði hasar
     public float attackCooldown = 1f; // Saldýrý bekleme süresi
     private float attackTimer; // Saldýrý için geri sayým
+    public float health = 100f; // Düþman saðlýðý
+
+
 
     private void Update()
     {
@@ -43,10 +46,17 @@ public class MeleeEnemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        health -= damage; // Saðlýktan hasar çýkar
         if (health <= 0)
         {
-            Destroy(gameObject); // Düþman ölür
+            Die(); // Saðlýk 0 veya daha azsa öl
         }
     }
+
+    void Die()
+    {
+        // Ölüm animasyonu eklemek isterseniz buraya yazabilirsiniz
+        Destroy(gameObject); // Düþmaný yok et
+    }
 }
+
