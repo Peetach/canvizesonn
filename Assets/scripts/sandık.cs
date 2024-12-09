@@ -1,16 +1,12 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Sahne geçişi için gerekli
+using UnityEngine.SceneManagement; // Sahne değiştirmek için gerekli
 
-public class SceneChanger : MonoBehaviour
+public class ChestInteraction : MonoBehaviour
 {
-    [SerializeField] private string targetScene; // Geçiş yapmak istediğiniz sahnenin adı
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    // Sandığa tıklama olayı
+    void OnMouseDown()
     {
-        // Oyuncu sandığa dokunduysa
-        if (collision.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(targetScene); // Belirtilen sahneye geçiş yap
-        }
+        // Sahne adı veya indeksiyle geçiş
+        SceneManager.LoadScene("GameScene"); // "GameScene" yerine kendi oyun sahnenizin adını yazın.
     }
 }
